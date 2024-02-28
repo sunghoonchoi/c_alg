@@ -18,7 +18,8 @@ int solution(int** arr, size_t arr_rows, size_t arr_cols) {
 //     printf("myIntPointer = %d\n", myIntPointer[0][1]);
 //     printf("myIntPointer = %d\n", myIntPointer[1][0]);
 //     printf("myIntPointer = %d\n", myIntPointer[1][1]);
-    
+
+    //1. 왜 주석된 memcpy가 안된거지?
     
     for (size_t r=0; r<arr_rows; r++)
     {
@@ -33,7 +34,8 @@ int solution(int** arr, size_t arr_rows, size_t arr_cols) {
     
     int** cc = malloc(sizeof(int)*arr_rows*arr_cols);
     printf("sizeof(cc) = %d", sizeof(cc));
-    
+
+    //2. 이렇게 해서 cc를 리턴하면 배열처럼 쓸수 있나?
     
     return answer;
 }
